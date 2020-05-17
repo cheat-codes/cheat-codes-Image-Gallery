@@ -1,0 +1,194 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+body{
+    width:100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header{
+    width: 50%;
+    padding: 1%;
+    background-color: rgb(233, 91, 10);
+    text-align: center;
+    margin: 5vh auto;
+    border-radius: 20%;
+}
+
+
+
+.header h2{
+    color: rgb(39, 38, 38);
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.imagesContainer   {
+
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+
+.image{
+    width: 33.33%;
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.image-text{
+    width:100%;
+    height: 100%;
+    z-index: 4;
+}
+
+
+.image-text p{
+    position: relative;
+    top:87%;
+    padding-left: 7%;
+    font-size: 18px;
+    line-height: 15px;
+    color:rgb(184, 180, 180);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image-text h4{
+    position: relative;
+    top:88%;
+    padding-left: 7%;
+    font-size: 18px;
+    line-height: 20px;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+
+.image-text div i{
+    font-size: 15px;
+    color:rgb(44, 43, 43);
+    display: none;
+}
+
+
+.image-text:hover{
+    cursor: pointer;
+    z-index: 2;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+
+.image-text:hover div{
+    position: absolute;
+    top:44%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background:#fff;
+    font-size: 1.2em;
+    cursor:zoom-in;
+    z-index: 7;
+}
+
+
+.image-text:hover div i{
+    display: inline-block;
+}
+
+
+
+
+.imagePop{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 200;
+    display: none;
+    
+}
+
+.imagePopUnder{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.9);
+    z-index: 12;
+}
+
+.imagePopUnder:hover{
+    cursor:zoom-out;
+}
+
+
+.imageContain{
+    position: relative;
+    top:  0;
+    left: -20%;
+    width: 30%;
+    height: 90vh;
+    z-index: 12;
+    margin: 5vh 35%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+
+@keyframes he{
+
+    100%{
+        left:0;
+    }
+}
+
+
+.click1{
+    position: absolute;
+    z-index: 14;
+    top:50%;
+    left: 5%;
+    cursor: pointer;
+    color: #fff;
+}
+
+.click2{
+    position: absolute;
+    z-index: 14;
+    top:50%;
+    right: 5%;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.close{
+    position: absolute;
+    z-index: 14;
+    top:5%;
+    right: 5%;
+    cursor: pointer;
+    color: #fff;
+}
